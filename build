@@ -1,0 +1,4 @@
+#g++ -I ../json_eval/json/single_include test1.cpp
+#g++ -I ../json_eval/json/single_include test2.cpp
+#g++ -I ../json_eval/json/single_include test3.cpp
+g++ -I ../json_eval/json/single_include test4.cpp
