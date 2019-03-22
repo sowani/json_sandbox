@@ -4,9 +4,19 @@
         "Ac2DcAdapter" : {
             "IDs" : [
               -1,
+              -1,
+              -1,
               -1
             ],
             "AdapterInfo" : [
+              {
+                  "NumTempSensors": -1,
+                  "NumberOfFans": -1
+              },
+              {
+                  "NumTempSensors": -1,
+                  "NumberOfFans": -1
+              },
               {
                   "NumTempSensors": -1,
                   "NumberOfFans": -1
@@ -58,7 +68,7 @@
             ],
             "KevinController" : {
                 "AcPanelMeter": 1,
-                "Ac2DcAdapter": 2,
+                "Ac2DcAdapter": 4,
                 "PvAdapter": 2,
                 "BatteryAdapter": 2,
                 "KevinController": 1

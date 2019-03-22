@@ -110,8 +110,11 @@ map<string,string> Config::getValue (const string sensor, const string service, 
   sectionData = cfgRoot["Sensors"][sensor][service][index];
   cout << sectionData << endl;
 
-  valueMap["NumberOfFans"] = to_string(int(sectionData["NumberOfFans"]));
-  valueMap["NumTempSensors"] = to_string(int(sectionData["NumTempSensors"]));
+  for (auto it = sectionData.begin(); it != sectionData.end(); ++it)
+  {
+    //std::cout << "key: " << it.key() << ", value:" << it.value() << '\n';
+    valueMap[it.key()] = to_string(int(it.value()));
+  }
   return (valueMap);
 }
 
@@ -129,12 +132,12 @@ int main (void)
 
   cfg.loadConfiguration (DEFAULT_KEVIN_CONFIG_FILE);
   res = cfg.updateSensorID ("Ac2DcAdapter", 1001);
-  cout << "res = " << res << endl;
+  //cout << "res = " << res << endl;
   res = cfg.updateConfigurationValue ("Ac2DcAdapter", 1001, "AdapterInfo", "NumTempSensors", 6);
-  cout << "res = " << res << endl;
+  //cout << "res = " << res << endl;
   res = cfg.updateConfigurationValue ("Ac2DcAdapter", 1001, "AdapterInfo", "NumberOfFans", 4);
-  cout << "res = " << res << endl;
-  cfg.printConfig();
+  //cout << "res = " << res << endl;
+  //cfg.printConfig();
 
   // ------- tested -------
   //res = cfg.updateSensorID ("Ac2DcAdapter", 1001);
@@ -186,9 +189,9 @@ int main (void)
     //cout << tt1[i] << " ";
   //cout << endl;
 
-  //tt2 = cfg.getValue ("Ac2DcAdapter", "adapterInfo", 1);
-  //cout << tt2["numberOfFans"] << ", ";
-  //cout << tt2["numberOfTemperatureSensors"] << endl;
+  tt2 = cfg.getValue ("Ac2DcAdapter", "AdapterInfo", 1);
+  cout << tt2["NumberOfFans"] << ", ";
+  cout << tt2["NumTempSensors"] << endl;
 
   return (0);
 }
