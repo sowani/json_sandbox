@@ -5,7 +5,7 @@
 #include <map>
 #include "nlohmann/json.hpp"
 using json = nlohmann::json;
-#define DEFAULT_KEVIN_CONFIG_FILE "KevinConfig_template.json"
+#define DEFAULT_KEVIN_CONFIG_FILE "KevinConfig.json"
 using namespace std;
 
 class Config
@@ -21,14 +21,17 @@ class Config
     vector<int> getNumOfAdapter (const string AdapterName);
     map<string,string> getValue (const string sensor, const string service, int index);
     void setKevinID (int kevinID);
-    bool updateSensorID (const std::string sensorName, int sensorID);
+    bool updateSensorID (const std::string sensorName, string sensorID);
     bool updateConfigurationValue (const std::string sensorName,
-		int sensorID, const std::string service,
+		string sensorID, const std::string service,
 		const std::string key, int value);
+    bool updateConfigurationValue (const std::string sensorName,
+		string sensorID, const std::string service,
+		const std::string key, string value);
     void printConfig() { cout << setw(4) << cfgRoot << endl; }
 };
 
-bool Config::updateSensorID (const std::string sensorName, int sensorID)
+bool Config::updateSensorID (const std::string sensorName, string sensorID)
 {
   bool retval = false;
   for (int i = 0; i < cfgRoot["Sensors"]["KevinController"]["KevinController"][sensorName]; i++)
@@ -48,8 +51,31 @@ bool Config::updateSensorID (const std::string sensorName, int sensorID)
 }
 
 bool Config::updateConfigurationValue (const std::string sensorName,
-		int sensorID, const std::string service,
+		string sensorID, const std::string service,
 		const std::string key, int value)
+{
+  bool retval = false;
+  int index = 0;
+  // from the ID, find the index.
+  for (int i = 0; i < cfgRoot["Sensors"]["KevinController"]["KevinController"][sensorName]; i++)
+  {
+    if (cfgRoot["Sensors"][sensorName]["IDs"][i] == sensorID)
+    {
+      index = i;
+      retval = true;
+      break;
+    }
+  }
+
+  if (retval == true)
+    cfgRoot["Sensors"][sensorName][service][index][key] = value;
+
+  return (retval);
+}
+
+bool Config::updateConfigurationValue (const std::string sensorName,
+		string sensorID, const std::string service,
+		const std::string key, std::string value)
 {
   bool retval = false;
   int index = 0;
@@ -113,7 +139,8 @@ map<string,string> Config::getValue (const string sensor, const string service, 
   for (auto it = sectionData.begin(); it != sectionData.end(); ++it)
   {
     //std::cout << "key: " << it.key() << ", value:" << it.value() << '\n';
-    valueMap[it.key()] = to_string(int(it.value()));
+    //valueMap[it.key()] = to_string(int(it.value())); -- assuming value is int
+    valueMap[it.key()] = it.value();
   }
   return (valueMap);
 }
@@ -131,15 +158,20 @@ int main (void)
   map<string, string> tt2;
 
   cfg.loadConfiguration (DEFAULT_KEVIN_CONFIG_FILE);
-  res = cfg.updateSensorID ("Ac2DcAdapter", 1001);
-  //cout << "res = " << res << endl;
-  res = cfg.updateConfigurationValue ("Ac2DcAdapter", 1001, "AdapterInfo", "NumTempSensors", 6);
-  //cout << "res = " << res << endl;
-  res = cfg.updateConfigurationValue ("Ac2DcAdapter", 1001, "AdapterInfo", "NumberOfFans", 4);
+  res = cfg.updateConfigurationValue ("PvAdapter", "2002", "ComponentID", "ManufactureWeek", "eight");
   //cout << "res = " << res << endl;
   //cfg.printConfig();
 
+
   // ------- tested -------
+  //res = cfg.updateSensorID ("Ac2DcAdapter", 1001);
+  //cout << "res = " << res << endl;
+  //res = cfg.updateConfigurationValue ("Ac2DcAdapter", 1001, "AdapterInfo", "NumTempSensors", 6);
+  //cout << "res = " << res << endl;
+  //res = cfg.updateConfigurationValue ("Ac2DcAdapter", 1001, "AdapterInfo", "NumberOfFans", 4);
+  //cout << "res = " << res << endl;
+  //cfg.printConfig();
+
   //res = cfg.updateSensorID ("Ac2DcAdapter", 1001);
   //cout << "res = " << res << endl;
   //tt1 = cfg.getNumOfAdapter ("Ac2DcAdapter");

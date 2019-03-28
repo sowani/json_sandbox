@@ -25,6 +25,44 @@
                   "NumTempSensors": -1,
                   "NumberOfFans": -1
               }
+            ],
+            "ComponentID" : [
+              {
+                  "SerialNumber": "",
+                  "ModelName": "",
+                  "ManufacturerCode": "",
+                  "ManufactureYear": "",
+                  "ManufactureWeek": "",
+                  "FirmwareVersion": "",
+                  "BoardRevision": ""
+              },
+              {
+                  "SerialNumber": "",
+                  "ModelName": "",
+                  "ManufacturerCode": "",
+                  "ManufactureYear": "",
+                  "ManufactureWeek": "",
+                  "FirmwareVersion": "",
+                  "BoardRevision": ""
+              },
+              {
+                  "SerialNumber": "",
+                  "ModelName": "",
+                  "ManufacturerCode": "",
+                  "ManufactureYear": "",
+                  "ManufactureWeek": "",
+                  "FirmwareVersion": "",
+                  "BoardRevision": ""
+              },
+              {
+                  "SerialNumber": "",
+                  "ModelName": "",
+                  "ManufacturerCode": "",
+                  "ManufactureYear": "",
+                  "ManufactureWeek": "",
+                  "FirmwareVersion": "",
+                  "BoardRevision": ""
+              }
             ]
         },
 
@@ -41,6 +79,26 @@
               {
                   "NumTempSensors": -1,
                   "NumberOfFans": -1
+              }
+            ],
+            "ComponentID" : [
+              {
+                  "SerialNumber": "",
+                  "ModelName": "",
+                  "ManufacturerCode": "",
+                  "ManufactureYear": "",
+                  "ManufactureWeek": "",
+                  "FirmwareVersion": "",
+                  "BoardRevision": ""
+              },
+              {
+                  "SerialNumber": "",
+                  "ModelName": "",
+                  "ManufacturerCode": "",
+                  "ManufactureYear": "",
+                  "ManufactureWeek": "",
+                  "FirmwareVersion": "",
+                  "BoardRevision": ""
               }
             ]
         },
@@ -59,6 +117,26 @@
                   "NumTempSensors": -1,
                   "NumberOfFans": -1
               }
+            ],
+            "ComponentID" : [
+              {
+                  "SerialNumber": "",
+                  "ModelName": "",
+                  "ManufacturerCode": "",
+                  "ManufactureYear": "",
+                  "ManufactureWeek": "",
+                  "FirmwareVersion": "",
+                  "BoardRevision": ""
+              },
+              {
+                  "SerialNumber": "",
+                  "ModelName": "",
+                  "ManufacturerCode": "",
+                  "ManufactureYear": "",
+                  "ManufactureWeek": "",
+                  "FirmwareVersion": "",
+                  "BoardRevision": ""
+              }
             ]
         },
 
@@ -72,7 +150,18 @@
                 "PvAdapter": 2,
                 "BatteryAdapter": 2,
                 "KevinController": 1
-            }
+            },
+            "ComponentID" : [
+              {
+                  "SerialNumber": "",
+                  "ModelName": "",
+                  "ManufacturerCode": "",
+                  "ManufactureYear": "",
+                  "ManufactureWeek": "",
+                  "FirmwareVersion": "",
+                  "BoardRevision": ""
+              }
+            ]
         }
     }
 }
