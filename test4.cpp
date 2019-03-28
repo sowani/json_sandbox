@@ -21,6 +21,7 @@ class Config
     vector<int> getNumOfAdapter (const string AdapterName);
     map<string,string> getValue (const string sensor, const string service, int index);
     void setKevinID (int kevinID);
+    void setKevinID (string kevinID);
     bool updateSensorID (const std::string sensorName, string sensorID);
     bool updateConfigurationValue (const std::string sensorName,
 		string sensorID, const std::string service,
@@ -36,7 +37,7 @@ bool Config::updateSensorID (const std::string sensorName, string sensorID)
   bool retval = false;
   for (int i = 0; i < cfgRoot["Sensors"]["KevinController"]["KevinController"][sensorName]; i++)
   {
-    if (cfgRoot["Sensors"][sensorName]["IDs"][i] == -1)
+    if (cfgRoot["Sensors"][sensorName]["IDs"][i] == "")
     {
       cfgRoot["Sensors"][sensorName]["IDs"][i] = sensorID;
       retval = true;
@@ -146,6 +147,11 @@ map<string,string> Config::getValue (const string sensor, const string service, 
 }
 
 void Config::setKevinID (int kevinID)
+{
+  cfgRoot["kevinID"] = kevinID;
+}
+
+void Config::setKevinID (string kevinID)
 {
   cfgRoot["kevinID"] = kevinID;
 }

@@ -1,0 +1,14 @@
+[Unit]
+Description=My Test Process
+After=network.target
+
+[Service]
+Type=simple
+User=test
+Group=test
+WorkingDirectory=/home/test/tmp/json_sandbox
+ExecStart=/home/test/tmp/json_sandbox/myproc
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
