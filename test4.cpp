@@ -112,19 +112,21 @@ void Config::loadConfiguration (std::string configFile)
     cfgFile.open (configFile);
     cfgFile >> cfgRoot;
     cfgFile.close();
-    //cout << std::setw(4) << cfgRoot << endl;
 }
 
 vector<int> Config::getNumOfAdapter (const string AdapterName)
 {
   json sectionData;
   vector<int> adapterIDs;
+  string s, s1;
 
-  for (int i = 0; i < cfgRoot["Sensors"]["KevinController"]["KevinController"][AdapterName]; i++)
+  s = cfgRoot["Sensors"]["KevinController"]["KevinController"][AdapterName];
+  for (int i = 0; i < stoi(s); i++)
   {
     sectionData = cfgRoot["Sensors"][AdapterName]["IDs"];
-    //cout << sectionData[i] << endl;
-    adapterIDs.push_back(sectionData[i]);
+    cout << setw(4) << sectionData[i] << endl;
+    s1 = sectionData[i];
+    adapterIDs.push_back( stoi(s1) );
   }
   return adapterIDs;
 }
@@ -164,7 +166,8 @@ int main (void)
   map<string, string> tt2;
 
   cfg.loadConfiguration (DEFAULT_KEVIN_CONFIG_FILE);
-  res = cfg.updateConfigurationValue ("PvAdapter", "2002", "ComponentID", "ManufactureWeek", "eight");
+
+  res = cfg.updateConfigurationValue ("PvAdapter", "22", "ComponentID", "ManufactureWeek", "eight");
   //cout << "res = " << res << endl;
   //cfg.printConfig();
 
@@ -213,12 +216,12 @@ int main (void)
     //cout << tt1[i] << " ";
   //cout << endl;
 
-  //tt1 = cfg.getNumOfAdapter ("PvAdapter");
-  //cout << "PvAdapter: " << tt1.size() << endl;
-  //cout << "IDs: ";
-  //for (int i = 0; i < tt1.size(); i++)
-    //cout << tt1[i] << " ";
-  //cout << endl;
+  tt1 = cfg.getNumOfAdapter ("PvAdapter");
+  cout << "PvAdapter: " << tt1.size() << endl;
+  cout << "IDs: ";
+  for (int i = 0; i < tt1.size(); i++)
+    cout << tt1[i] << " ";
+  cout << endl;
 
   //tt1 = cfg.getNumOfAdapter ("BatteryAdapter");
   //cout << "BatteryAdapter: " << tt1.size() << endl;

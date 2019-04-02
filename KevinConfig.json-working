@@ -1,0 +1,78 @@
+{
+    "Sensors" : {
+
+        "Ac2DcAdapter" : {
+            "IDs" : [
+              "11",
+              "12",
+              "13",
+              "14"
+            ],
+            "AdapterInfo" : [
+              {
+                  "NumTempSensors": "6",
+                  "NumberOfFans": "4"
+              },
+              {
+                  "NumTempSensors": "6",
+                  "NumberOfFans": "4"
+              },
+              {
+                  "NumTempSensors": "6",
+                  "NumberOfFans": "4"
+              },
+              {
+                  "NumTempSensors": "6",
+                  "NumberOfFans": "4"
+              }
+            ]
+        },
+
+        "PvAdapter" : {
+            "IDs" : [
+              "21",
+              "22"
+            ],
+            "AdapterInfo" : [
+              {
+                  "NumTempSensors": "6",
+                  "NumberOfFans": "4"
+              },
+              {
+                  "NumTempSensors": "6",
+                  "NumberOfFans": "4"
+              }
+            ]
+        },
+
+        "BatteryAdapter" : {
+            "IDs" : [
+              "31",
+              "32"
+            ],
+            "AdapterInfo" : [
+              {
+                  "NumTempSensors": "6",
+                  "NumberOfFans": "4"
+              },
+              {
+                  "NumTempSensors": "6",
+                  "NumberOfFans": "4"
+              }
+            ]
+        },
+
+        "KevinController" : {
+            "IDs" : [
+              "1"
+            ],
+            "KevinController" : {
+                "AcPanelMeter": "1",
+                "Ac2DcAdapter": "4",
+                "PvAdapter": "2",
+                "BatteryAdapter": "2",
+                "KevinController": "1"
+            }
+        }
+    }
+}

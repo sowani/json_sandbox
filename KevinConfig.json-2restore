@@ -1,0 +1,139 @@
+{
+    "Sensors" : {
+
+        "Ac2DcAdapter" : {
+            "IDs" : [
+              "1001",
+              "1002"
+            ],
+            "AdapterInfo" : [
+              {
+                  "NumTempSensors": "2",
+                  "NumberOfFans": "4"
+              },
+              {
+                  "NumTempSensors": "3",
+                  "NumberOfFans": "6"
+              }
+            ],
+            "ComponentID" : [
+              {
+                  "SerialNumber": "1",
+                  "ModelName": "1",
+                  "ManufacturerCode": "1",
+                  "ManufactureYear": "1",
+                  "ManufactureWeek": "1",
+                  "FirmwareVersion": "1",
+                  "BoardRevision": "1"
+              },
+              {
+                  "SerialNumber": "2",
+                  "ModelName": "2",
+                  "ManufacturerCode": "2",
+                  "ManufactureYear": "2",
+                  "ManufactureWeek": "2",
+                  "FirmwareVersion": "2",
+                  "BoardRevision": "2"
+              }
+            ]
+        },
+
+        "PvAdapter" : {
+            "IDs" : [
+              "2001",
+              "2002"
+            ],
+            "AdapterInfo" : [
+              {
+                  "NumTempSensors": "2",
+                  "NumberOfFans": "4"
+              },
+              {
+                  "NumTempSensors": "3",
+                  "NumberOfFans": "6"
+              }
+            ],
+            "ComponentID" : [
+              {
+                  "SerialNumber": "3",
+                  "ModelName": "3",
+                  "ManufacturerCode": "3",
+                  "ManufactureYear": "3",
+                  "ManufactureWeek": "3",
+                  "FirmwareVersion": "3",
+                  "BoardRevision": "3"
+              },
+              {
+                  "SerialNumber": "4",
+                  "ModelName": "4",
+                  "ManufacturerCode": "4",
+                  "ManufactureYear": "4",
+                  "ManufactureWeek": "4",
+                  "FirmwareVersion": "4",
+                  "BoardRevision": "4"
+              }
+            ]
+        },
+
+        "BatteryAdapter" : {
+            "IDs" : [
+              "3001",
+              "3002"
+            ],
+            "AdapterInfo" : [
+              {
+                  "NumTempSensors": "2",
+                  "NumberOfFans": "4"
+              },
+              {
+                  "NumTempSensors": "3",
+                  "NumberOfFans": "6"
+              }
+            ],
+            "ComponentID" : [
+              {
+                  "SerialNumber": "5",
+                  "ModelName": "5",
+                  "ManufacturerCode": "5",
+                  "ManufactureYear": "5",
+                  "ManufactureWeek": "5",
+                  "FirmwareVersion": "5",
+                  "BoardRevision": "5"
+              },
+              {
+                  "SerialNumber": "6",
+                  "ModelName": "6",
+                  "ManufacturerCode": "6",
+                  "ManufactureYear": "6",
+                  "ManufactureWeek": "6",
+                  "FirmwareVersion": "6",
+                  "BoardRevision": "6"
+              }
+            ]
+        },
+
+        "KevinController" : {
+            "IDs" : [
+              "1"
+            ],
+            "KevinController" : {
+                "AcPanelMeter": "1",
+                "Ac2DcAdapter": "2",
+                "PvAdapter": "2",
+                "BatteryAdapter": "2",
+                "KevinController": "1"
+            },
+            "ComponentID" : [
+              {
+                  "SerialNumber": "7",
+                  "ModelName": "7",
+                  "ManufacturerCode": "7",
+                  "ManufactureYear": "7",
+                  "ManufactureWeek": "7",
+                  "FirmwareVersion": "7",
+                  "BoardRevision": "7"
+              }
+            ]
+        }
+    }
+}

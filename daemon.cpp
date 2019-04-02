@@ -7,10 +7,16 @@ using namespace std;
 
 ofstream logFile;
 
+void xyz(void)
+{
+  cout << "winding up ..." << endl;
+}
+
 void signalCB (int sig)
 {
   logFile << ">>> caught signal " << sig << endl;
   signal (SIGUSR1, signalCB);
+  xyz();
 }
 
 int main (void)
