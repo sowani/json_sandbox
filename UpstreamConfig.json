@@ -1,0 +1,5 @@
+{
+    "kevinID": 1,
+    "logTargets": ["serial", "remote"],
+    "otaFrequency" : 24
+}
