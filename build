@@ -6,4 +6,5 @@
 #g++ -I ../json_eval/json/single_include log_writer.cpp
 #g++ -O2 -Wall -pedantic -std=c++11 -D__cplusplus=201103L timestamp.cpp
 #g++ -o usb-event-handler usb-event-handler.cpp
-g++ -I ../json_eval/json/single_include test6.cpp
+#g++ -I ../json_eval/json/single_include test6.cpp
+g++ -o mapvec mapvec.cpp
