@@ -1,0 +1,234 @@
+*****************************************************************************
+*           CTC++, Test Coverage Analyzer for C/C++, Version 9.0.3          *
+*                                                                           *
+*                         EXECUTION PROFILE LISTING                         *
+*                                                                           *
+*                    Copyright (c) 1993-2013 Testwell Oy                    *
+*             Copyright (c) 2013-2019 Verifysoft Technology GmbH            *
+*****************************************************************************
+
+
+Symbol file(s) used   : MON.sym (Tue Jun 18 10:19:54 2019)
+Data file(s) used     : MON.dat (Tue Jun 18 10:20:03 2019)
+Listing produced at   : Tue Jun 18 10:21:37 2019
+Coverage view         : As instrumented
+
+
+
+MONITORED SOURCE FILE : /home/test/tmp/json_sandbox/mapvec.cpp
+INSTRUMENTATION MODE  : multicondition
+
+ HITS/TRUE      FALSE    LINE DESCRIPTION
+=============================================================================
+
+         0            -    39 FUNCTION Characteristic::Characteristic()
+         0            -    45 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::Characteristic()
+         0 % (  0/  5) statement
+-----------------------------------------------------------------------------
+
+         3                 47 FUNCTION Characteristic::Characteristic()
+         3                 53 }
+
+***TER 100 % (  2/  2) of FUNCTION Characteristic::Characteristic()
+       100 % (  5/  5) statement
+-----------------------------------------------------------------------------
+
+         3                 56 FUNCTION Characteristic::markAsUpdated()
+         3                 59 }
+
+***TER 100 % (  2/  2) of FUNCTION Characteristic::markAsUpdated()
+       100 % (  2/  2) statement
+-----------------------------------------------------------------------------
+
+         3                 61 FUNCTION Characteristic::markAsNotUpdated()
+         3                 64 }
+
+***TER 100 % (  2/  2) of FUNCTION Characteristic::markAsNotUpdated()
+       100 % (  2/  2) statement
+-----------------------------------------------------------------------------
+
+         0            -    67 FUNCTION Characteristic::setDataElementType()
+         0            -    69 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::setDataElementType()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -    71 FUNCTION Characteristic::getDataElementType()
+         0            -    72   return this -> type
+                           73 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::getDataElementType()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -    75 FUNCTION Characteristic::getIsUpdated()
+         0            -    76   return isUpdated
+                           77 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::getIsUpdated()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -    79 FUNCTION Characteristic::setIsUpdated()
+         0            -    81 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::setIsUpdated()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -    83 FUNCTION Characteristic::getPriority()
+         0            -    84   return priority
+                           85 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::getPriority()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -    87 FUNCTION Characteristic::setPriority()
+         0            -    89 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::setPriority()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -    91 FUNCTION Characteristic::getTimeStamp()
+         0            -    92   return timeStamp
+                           93 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::getTimeStamp()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -    95 FUNCTION Characteristic::setTimeStamp()
+         0            -    97 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::setTimeStamp()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -    99 FUNCTION Characteristic::getName()
+         0            -   100   return name
+                          101 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::getName()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -   103 FUNCTION Characteristic::setName()
+         0            -   105 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::setName()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -   107 FUNCTION Characteristic::setName()
+         0            -   109 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::setName()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -   111 FUNCTION Characteristic::getName()
+         0            -   112   return this -> name . c_str ( )
+                          113 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::getName()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -   115 FUNCTION Characteristic::getStringName()
+         0            -   116   return this -> name
+                          117 }
+
+***TER   0 % (  0/  2) of FUNCTION Characteristic::getStringName()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         0            -   133 FUNCTION CharacteristicUint16::CharacteristicUint16()
+         0            -   135 }
+
+***TER   0 % (  0/  2) of FUNCTION CharacteristicUint16::CharacteristicUint16()
+         0 % (  0/  1) statement
+-----------------------------------------------------------------------------
+
+         3                137 FUNCTION CharacteristicUint16::CharacteristicUint16()
+         3                139 }
+
+***TER 100 % (  2/  2) of FUNCTION CharacteristicUint16::CharacteristicUint16()
+       100 % (  1/  1) statement
+-----------------------------------------------------------------------------
+
+         3                141 FUNCTION CharacteristicUint16::getValue()
+         3                143   return value
+                          144 }
+
+***TER 100 % (  2/  2) of FUNCTION CharacteristicUint16::getValue()
+       100 % (  2/  2) statement
+-----------------------------------------------------------------------------
+
+         3                146 FUNCTION CharacteristicUint16::setValue()
+         3                149 }
+
+***TER 100 % (  2/  2) of FUNCTION CharacteristicUint16::setValue()
+       100 % (  2/  2) statement
+-----------------------------------------------------------------------------
+
+         1                164 FUNCTION pmac_table::pmac_table()
+         1                164 }
+
+***TER 100 % (  2/  2) of FUNCTION pmac_table::pmac_table()
+       100 % (  1/  1) statement
+-----------------------------------------------------------------------------
+
+         1                165 FUNCTION pmac_table::~pmac_table()
+         1                165 }
+
+***TER 100 % (  2/  2) of FUNCTION pmac_table::~pmac_table()
+       100 % (  1/  1) statement
+-----------------------------------------------------------------------------
+
+         1                169 FUNCTION pmac_table::getChars()
+         1          0 -   173   if (itr != pmacTable . end ( ))
+                          174   }+
+         1                175   return ( chars )
+                          176 }
+
+***TER  75 % (  3/  4) of FUNCTION pmac_table::getChars()
+       100 % (  5/  5) statement
+-----------------------------------------------------------------------------
+
+         1                178 FUNCTION main()
+         3          1     187   for (;it != chars . end ( );)
+         1          2     191     if (topic . compare ( "char5" ) == 0)
+                          195     }+
+         1          1     196     else if (topic . compare ( "char6" ) == 0)
+                          200     }+
+         1          0 -   201     else if (topic . compare ( "char7" ) == 0)
+                          205     }+
+                          206   }+
+         1                210   return ( 0 )
+                          211 }
+
+***TER  90 % (  9/ 10) of FUNCTION main()
+       100 % ( 24/ 24) statement
+-----------------------------------------------------------------------------
+
+
+***TER  47 % ( 28/ 60) of FILE /home/test/tmp/json_sandbox/mapvec.cpp
+        70 % ( 45/ 64) statement
+-----------------------------------------------------------------------------
+
+
+
+SUMMARY
+=======
+
+Source files       : 1
+Headers extracted  : 0
+Functions          : 25
+Source lines       : 211
+TER                : 47 % (28/60) multicondition
+TER                : 70 % (45/64) statement
