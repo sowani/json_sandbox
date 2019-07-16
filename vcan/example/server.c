@@ -39,6 +39,7 @@ int main (void)
   if (ret == -1)
   {
     PRINT ("vcan_registerFn failed, exiting.\n");
+    /* Try to close CAN device. */
     vcan_fini (&can_dev);
     return ret;
   }
@@ -51,6 +52,7 @@ int main (void)
     if (ret == -1)
     {
       PRINT ("vcan_receive failed, exiting.\n");
+      /* Try to close CAN device. */
       vcan_fini (&can_dev);
       return (ret);
     }

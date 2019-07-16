@@ -24,6 +24,8 @@ int main (void)
   frame.can_dlc = 2;
   frame.data[0] = 0x11;
   frame.data[1] = 0x22;
+  frame.data[2] = frame.data[3] = frame.data[4] = 0x00;
+  frame.data[5] = frame.data[6] = frame.data[7] = 0x00;
 
   /* Send the frame 1 via CAN device. */
   PRINT ("sending frame 1\n");
