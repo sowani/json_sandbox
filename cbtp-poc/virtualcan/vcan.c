@@ -1,3 +1,9 @@
+/*
+ *  vcan.c
+ *
+ *  Created on: 15-Jul-2019
+ *  Author: Atul Sowani
+ */
 #include "vcan.h"
 
 /**
@@ -93,7 +99,6 @@ int vcan_receive(struct CANdevice *vcan)
 {
 	struct can_frame frame;
 	fd_set rdfs;
-    int clientIndex = 0;
 
 	sigset_t sigmask;
 	struct timespec timeout;
@@ -111,6 +116,7 @@ int vcan_receive(struct CANdevice *vcan)
 	if (FD_ISSET(vcan->canRawSock, &rdfs))
     {
         int nBytes = 0;
+        int clientIndex = 0;
 		nBytes = read(vcan->canRawSock, &frame, CAN_MTU);
         PRINT ("%d bytes read\n", nBytes);
 		if (nBytes <= 0)

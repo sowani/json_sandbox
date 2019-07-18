@@ -1,3 +1,9 @@
+/*
+ *  vcan.h
+ *
+ *  Created on: 15-Jul-2019
+ *  Author: Atul Sowani
+ */
 #ifndef VIRTUAL_CAN_H
 #define VIRTUAL_CAN_H
 
@@ -31,7 +37,7 @@ typedef int (*CAN_MESSAGE_RX_FUNCTION)(struct can_frame *frame);
  */
 struct CANdevice
 {
-    int canRawSock; // can raw socket
+    int canRawSock;
     struct sockaddr_can addr;
     CAN_MESSAGE_RX_FUNCTION canReceivers[MAX_CAN_RECEIVERS];
     int currentClientsCount;
