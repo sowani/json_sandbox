@@ -2,3 +2,4 @@ a.out
 MON.*
 *.o
 CTCHTML/
+test_jsons/
