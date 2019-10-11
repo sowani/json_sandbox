@@ -1,0 +1,9 @@
+{
+  "hasConfigChanged": false,
+  "kevinID": 1,
+  "logTargets": [
+    "serial",
+    "remote"
+  ],
+  "tt": "2"
+}

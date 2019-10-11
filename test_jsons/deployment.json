@@ -1,0 +1,12 @@
+{
+    "uuid" : "deployment-identifier",
+    "name" : "user-friendly-name",
+    "description" : "user-friendly-description",
+    "firmware" : {
+        "updateplanUUID" : "firmware-updateplan-identifier"
+     },
+    "targetDistributionType" : "push/poll",
+    "targetDeviceType" : "target-device-type",
+    "targetDeviceFilter" : "regex-for-device-selection",
+    "targetDeviceVersion" : "1.0.0"
+}

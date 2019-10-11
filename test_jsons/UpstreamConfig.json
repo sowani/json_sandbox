@@ -1,0 +1,5 @@
+{
+	"kevinID": 1,
+    "tt": 0,
+	"logTargets": ["serial", "remote"]
+}

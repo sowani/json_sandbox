@@ -1,0 +1,10 @@
+{
+    "uuid" : "firmware-identifier",
+    "name" : "user-friendly-name",
+    "description" : "user-friendly-description",
+    "firmwareUpdatePlan" : [
+        {
+            "updateplanUUID" : "firmware-updateplan-identifier"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+  "hasConfigUpdated": false,
+  "kevinID": 1,
+  "logTargets": [
+    "TERMINAL"
+  ],
+  "otaFreqMinutes": 24
+}

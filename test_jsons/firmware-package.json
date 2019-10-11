@@ -1,0 +1,18 @@
+{
+    "uuid" : "firmware-package-identifier",
+    "packageName" : "friendlyPackageName",
+    "version" : "1.1.0",
+    "versionFormat" : "major.minor.patch",
+    "compatibilityInfo" : {
+        "deviceClass" : "",
+        "deviceId" : "",
+        "include" : "",
+        "exclude" : "",
+        "repair" : "",
+        "downgrade" : ""
+    },
+    "maifestItems" : [{
+            "manifestUUID" : "firmware-manifest-identifier"
+        }
+    ]
+}

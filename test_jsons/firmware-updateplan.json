@@ -1,0 +1,14 @@
+{
+    "uuid" : "firmware-updateplan-identifier",
+    "description" : "user-friendly description",
+    "notes" : "any notes, warnings, etc",
+    "instructions" : "any special instructions",
+    "signer" : "signer name",
+    "updateGroup" : [
+        {
+            "packageUUID" : "firmware-package-identifier",
+            "name" : "user-friendly name",
+            "failurePolicy" : "rollbackAll/rollbackContinue/Continue"
+        }
+    ]
+}

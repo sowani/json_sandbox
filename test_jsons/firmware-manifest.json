@@ -1,0 +1,12 @@
+{
+    "uuid" : "firmware-manifest-identifier",
+    "binaryUUID" : "firmware-binary-identifier",
+    "signer" : "distinguishedName",
+    "type" : "firmware/bootloader/file/certificate/script",
+    "agentPath" : "file name and path",
+    "agentOwner" : "owning user:group",
+    "agentMode" : "rwxrwxrwx",
+    "devicePath" : "for files to be store on device",
+    "deviceOwner" : "same as agent",
+    "deviceMode" : "same as agent"
+}

@@ -1,0 +1,8 @@
+{
+    "uuid" : "deployment-identifier",
+    "name" : "user-friendly-name",
+    "description" : "user-friendly-description",
+    "firmware" : {
+        "updateplanUUID" : "firmware-identifier"
+     }
+}
