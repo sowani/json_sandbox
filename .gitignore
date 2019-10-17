@@ -1,5 +1,6 @@
 a.out
 MON.*
 *.o
+*.swp
 CTCHTML/
 test_jsons/
