@@ -16,10 +16,13 @@ int main (void)
   int val, ts;
 
   fp = fopen (fname, "r");
-  fgets (&line[0], 20, fp);
+  /* fgets (&line[0], 20, fp); */
+  fscanf (fp, "%d:%d", &val, &ts);
   fclose (fp);
+/*
   printf ("line = %s", line);
   sscanf (line, "%d:%d", &val, &ts);
+*/
   printf ("val = %d, ts = %d\n", val, ts);
 
   /* construct sample JSON */
