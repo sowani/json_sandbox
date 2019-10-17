@@ -10,7 +10,7 @@ int main (void)
   struct json_object *intObj1, *intObj2;
   time_t currtime;
 
-  const char *fname = "/home/test/tmp/fw_sandbox/fwsim/fwbackup/20191017-092135/result";
+  const char *fname = "/home/test/tmp/fw_sandbox/fwsim/fwbackup/result";
   char line[20];
   FILE *fp;
   int val, ts;
@@ -18,7 +18,9 @@ int main (void)
   fp = fopen (fname, "r");
   fgets (&line[0], 20, fp);
   fclose (fp);
+  printf ("line = %s", line);
   sscanf (line, "%d:%d", &val, &ts);
+  printf ("val = %d, ts = %d\n", val, ts);
 
   /* construct sample JSON */
   obj = json_object_new_object();
